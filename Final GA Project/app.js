@@ -181,6 +181,19 @@ $('button').click('click', function(event){
     $('.All, .Rutherford, .Napa').addClass('w3-white');
   }
 
+    else if($(this).text() == "ALL"){
+    event.preventDefault();
+    $('.test').empty();
+    initialize(rutherford);
+    initialize(calistoga);
+    initialize(napa);
+    $('.All').addClass('w3-black');
+    $('.Calistoga, .Rutherford, .Napa').removeClass('w3-black');
+    $('.Calistoga, .Rutherford, .Napa').addClass('w3-white');
+  }
+
+
+
 });
 
 
